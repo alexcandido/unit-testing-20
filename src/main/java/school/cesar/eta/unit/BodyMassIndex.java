@@ -2,20 +2,20 @@ package school.cesar.eta.unit;
 
 public class BodyMassIndex {
 
-    public static String calculate(float bmi){
-        if(bmi >= 30f){
+    public static String calculate(float bmi) {
+        if (bmi >= 30f) {
             return "Obese";
         }
 
-        if(bmi >= 25f){
+        if (bmi >= 25f) {
             return "Overweight";
         }
 
-        if(bmi >= 18.5f){
+        if (bmi >= 18.5f) {
             return "Normal Healthy weight";
         }
 
-        if(bmi >= 16f){
+        if (bmi >= 16f) {
             return "Underweight";
         }
 

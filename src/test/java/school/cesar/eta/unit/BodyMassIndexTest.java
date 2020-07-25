@@ -6,31 +6,31 @@ import org.junit.jupiter.api.Test;
 public class BodyMassIndexTest {
 
     @Test
-    public void calculate_bmiUnder16_severelyUnderweight(){
+    public void calculate_bmiUnder16_severelyUnderweight() {
         String actual = BodyMassIndex.calculate(15.9f);
         Assertions.assertEquals("Severely Underweight", actual);
     }
 
     @Test
-    public void calculate_bmi16_underweight(){
+    public void calculate_bmi16_underweight() {
         String actual = BodyMassIndex.calculate(16f);
         Assertions.assertEquals("Underweight", actual);
     }
 
     @Test
-    public void calculate_18Dot5_healthyWeight(){
+    public void calculate_18Dot5_healthyWeight() {
         String actual = BodyMassIndex.calculate(18.5f);
         Assertions.assertEquals("Normal Healthy weight", actual);
     }
 
     @Test
-    public void calculate_bmi25_overweight(){
+    public void calculate_bmi25_overweight() {
         String actual = BodyMassIndex.calculate(25f);
         Assertions.assertEquals("Overweight", actual);
     }
 
     @Test
-    public void calculate_bmi30_obese(){
+    public void calculate_bmi30_obese() {
         String actual = BodyMassIndex.calculate(30f);
         Assertions.assertEquals("Obese", actual);
     }

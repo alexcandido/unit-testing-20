@@ -8,7 +8,7 @@ public class PalindromeTest {
     private Palindrome palindrome;
 
     @BeforeEach
-    public void setup(){
+    public void setup() {
         palindrome = new Palindrome();
     }
 
